@@ -1,0 +1,23 @@
+
+[
+    {
+      "body": "New job post",
+      "user_id": 1
+    },
+    {
+      "body": "Job post 2",
+      "user_id": 1
+    },
+    {
+      "body": "Job post 3",
+      "user_id": 2
+    },
+    {
+      "body": "job post 3",
+      "user_id": 3
+    },
+    {
+      "body": "job post 4",
+      "user_id": 3
+    }
+]

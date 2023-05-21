@@ -1,0 +1,77 @@
+  <div class="row justify-content-center">
+  <div class="col-md-3">
+  <!-- Email input -->
+  <div class="form-outline mb-4">
+    <input type="email" id="email-input" class="form-control" />
+    <label class="form-label" for="email-input">Email address</label>
+  </div>
+
+  <!-- Password input -->
+  <div class="form-outline mb-4">
+    <input type="password" id="password-input" class="form-control" />
+    <label class="form-label" for="password-input">Password</label>
+  </div>
+
+<div class="d-flex justify-content-evenly"></div>
+
+  <!-- Submit button -->
+  <button id="login-form" type="submit" class="btn btn-outline-primary" data-mdb-ripple-color="dark">Sign in</button>
+
+{{!-- Modal --}}
+<!-- Button trigger modal -->
+<button type="button" id="registerBtn" class="btn btn-outline-primary" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop4">
+    Create Account
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+    <div class="modal-dialog d-flex justify-content-center">
+        <div class="modal-content w-75">
+            <div id="createModal" class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel4">Create a new Account</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="createModal" class="modal-body p-4">
+                <form>
+                    <!-- Name input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" id="name4" class="form-control" />
+                        <label class="form-label" for="name4">Name</label>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="email4" class="form-control" />
+                        <label class="form-label" for="email4">Email address</label>
+                    </div>
+
+                    <!-- Github input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" id="github" class="form-control" />
+                        <label class="form-label" for="github">GitHub URL</label>
+                    </div>
+
+                    <!-- LinkedIn input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" id="linkedIn" class="form-control" />
+                        <label class="form-label" for="linkedIn">LinkedIn URL</label>
+                    </div>
+                      <!-- Password input -->
+                    <div class="form-outline mb-4">
+                        <input type="password" id="password" class="form-control" />
+                        <label class="form-label" for="password">Password</label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button id="createAccountSubmit" type="submit" class="btn btn-outline-primary btn-block">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+ </div>
+  </div>
+<!-- Modal -->
+
+<script src="/js/login.js"></script>
+<script src="/js/signup.js"></script>

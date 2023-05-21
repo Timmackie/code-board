@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Scott Hale",
+    "email": "sth0067@gmail.com",
+    "password": "password12345",
+    "github": "https://www.github.com/shale00",
+    "linkedin": "https://www.linkedin.com/in/scott-hale/"
+  },
+  {
+    "name": "Tim Mackie",
+    "email": "timmackie117@gmail.com",
+    "password": "password12345",
+    "github": "https://www.github.com/Timmackie",
+    "linkedin": "https://www.linkedin.com/in/tim-mackie-48541914a/"
+  },
+  {
+    "name": "Claudia Solis",
+    "email": "cjelizondo12@gmail.com",
+    "password": "password12345",
+    "github": "https://www.github.com/cjsolis12",
+    "linkedin": "https://www.linkedin.com/in/claudia-solis-48599422a/"
+  },
+  {
+    "name": "Don Roberts",
+    "email": "dnr.services88@gmail.com",
+    "password": "password12345",
+    "github": "https://www.github.com/Donnie46",
+    "linkedin": "https://www.linkedin.com/in/donnie-roberts-074157172/"
+  },
+  {
+    "name": "Michael Formico",
+    "email": "michaelformico@gmail.com",
+    "password": "https://www.password12345",
+    "github": "https://www.github.com/MichaelFormico"
+  }
+]
