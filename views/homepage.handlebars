@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{#each users as |user| }}
 <div class="row align-center mb-5">
   <div class="col-md-6">
@@ -8,3 +9,58 @@
   </div>
 </div>
 {{/each}}
+=======
+<nav id="inlinebuttons">
+  <button type="button" id="newPostButton" class="btn btn-outline-primary" data-mdb-toggle="modal"
+    data-mdb-target="#staticBackdrop4">New Post</button>
+  <button class="btn btn-outline-primary" id="logout">Logout</button>
+</nav>
+<div id="homepage-container">
+  {{!-- Homepage tile --}}
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Career Connections</h1>
+    <p class="lead">Discover, Connect, and Succeed Together</p>
+  </div>
+  {{!-- HandleBar partial --}}
+  {{#each posts as |post|}}
+  {{> postDetails}}
+  {{/each}}
+  {{#if end}}
+  <button id="showmoreButton" class="btn btn-outline-primary" data-mdb-toggle="modal"
+    data-mdb-target="#staticBackdrop4" >Show 5 More</button>
+  {{/if}}
+
+  <!-- Create Post Modal -->
+  <div class="modal fade" id="staticBackdrop4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+    <div class="modal-dialog d-flex justify-content-center modal-lg">
+      <div class="modal-content w-75">
+        <div id="newPostModalColor" class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel4">New Post</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="newPostModalColor" class="modal-body p-4">
+          <form id="newPostForm">
+            <!-- Content input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="content">Write your message here:</label>
+              <textarea id="content" class="form-control" style="height: 200px;"></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button id="createPostSubmit" type="submit" class="btn btn-outline-primary btn-block">Post Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Create Post Modal -->
+
+  <script src="/js/homepage.js"></script>
+  <script src="/js/createpost.js"></script>
+  {{!-- <script>
+    var currentPosts = parseInt(window.location.pathname.slice(1));
+    if (currentPosts > 5) {
+      setTimeout(() => {document.getElementById(currentPosts).focus();},1000)      
+    }
+  </script> --}}
+>>>>>>> develop

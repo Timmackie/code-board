@@ -21,12 +21,19 @@ User.init(
       allowNull: false,
     },
     email: {
+<<<<<<< HEAD
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
       validate: {
         isEmail: true,
       },
+=======
+      type: DataTypes.STRING(255),
+      allowNull: false,
+      defaultValue: '',
+      unique: true,
+>>>>>>> develop
     },
     password: {
       type: DataTypes.STRING,
@@ -35,6 +42,19 @@ User.init(
         len: [8],
       },
     },
+<<<<<<< HEAD
+=======
+    linkedin: {
+      type: DataTypes. STRING,
+      allowNull: true,
+      unique: true,
+    },
+    github: {
+      type: DataTypes. STRING,
+      allowNull: true,
+      unique: true,
+    }
+>>>>>>> develop
   },
   {
     hooks: {

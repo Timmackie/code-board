@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Card background */
+.cork-board-container {
+  background-image: url("/images/corkboard.jpg");
+  background-size: cover;
+  margin: 5%;
+  border-radius: 15px;
+  border: 15px solid #644615;
+  box-shadow: -3px 3px 18px 0 rgba(0, 0, 0, 0.5);
+  font-size: 500px;
+}
+#user-name {
+  text-align: center;
+}
+.user-content {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(223, 237, 248);
+  box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+  color: rgb(68, 68, 66);
+}
+
+.sticky-outer {
+  display: flex;
+  padding-top: 92.5925926%;
+  position: relative;
+  width: 100%;
+}
+
+.sticky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Shadow behind the sticky note */
+.sticky:before {
+  box-shadow: -2px 2px 15px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
+  content: "";
+  width: 90%;
+  left: 5px;
+  height: 75%;
+  position: absolute;
+  top: 30%;
+}
+
+/* The sticky note itself */
+.sticky-content {
+  background: linear-gradient(
+    180deg,
+    rgb(238, 241, 95) 0%,
+    rgb(253, 255, 118) 12%,
+    rgb(255, 245, 137) 75%,
+    rgb(251, 255, 136) 100%
+  );
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kalam", cursive;
+  font-size: 1.25rem;
+
+  clip-path: url(#stickyClip);
+}
+
+.content-text {
+  margin-left: 10%;
+  margin-right: 15%;
+}
+
+/* Add responsiveness */
+@media screen and (min-width: 640px) {
+  .sticky-content {
+    font-size: 1.5rem;
+  }
+  .container-inner {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sticky-content {
+    font-size: 1.5rem;
+  }
+  .container-inner {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sticky-content {
+    font-size: 1.875rem;
+  }
+  .container-inner {
+    width: 25%;
+  }
+}
+
+#showMoreButton,
+#login-form,
+#createPostSubmit,
+#createAccountSubmit,
+#showmoreButton {
+  max-width: 100px;
+  max-height: 60px;
+  min-width: 100px;
+  min-height: 60px;
+}
+
+#newPostButton {
+  max-width: 100px;
+  max-height: 60px;
+  min-width: 100px;
+  min-height: 60px;
+  margin-left: -150px;
+}
+
+#logout {
+  max-width: 100px;
+  max-height: 60px;
+  min-width: 100px;
+  min-height: 60px;
+  margin-left: 1396px;
+} 
+
+#inlinebuttons { 
+  position: fixed;
+}
+  
+#registerBtn {
+  max-width: 100px;
+  max-height: 60px;
+  min-width: 100px;
+  min-height: 60px;
+  float: center;
+}
+
+#createModal, #newPostModalColor {
+  background-color: #fff7e8;
+}
