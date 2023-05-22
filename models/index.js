@@ -1,8 +1,4 @@
 const User = require('./User');
-<<<<<<< HEAD
-
-module.exports = { User };
-=======
 const Posts = require('./Posts');
 
 User.hasMany(Posts, {
@@ -15,4 +11,3 @@ User.hasMany(Posts, {
   });
 
 module.exports = { User, Posts };
->>>>>>> develop
