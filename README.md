@@ -3,7 +3,7 @@
   [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
   ## Description
-  This app is a job and career resource posting website where users can create an account. Once the user has created an account, they will be able to view and create posts on the homepage.
+  This app is a job and career resource posting website where users can create an account. Once the user has created an account, they will be able to view, create, and delete their respective posts on the homepage.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -18,7 +18,7 @@
   N/A
 
   ## Usage
-  The user will be directed to the login page, where they will be able to sign in or create an account. To create an account, click on the Create Account button and fill out all of the input boxes. The user can then sign in using the created email address and password. Once signed in, the user can create a post or logout, by clicking on the respective button.
+  The user will be directed to the login page, where they will be able to sign in or create an account. To create an account, click on the Create Account button and fill out all of the input boxes. The user can then sign in using the created email address and password. Once signed in, the user can create a post, delete a post or logout, by clicking on the respective button.  
 
   URL to deployed heroku app: https://codeboard.herokuapp.com/  
   URL to GitHub repo: https://github.com/Timmackie/code-board  

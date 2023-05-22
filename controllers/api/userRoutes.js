@@ -56,4 +56,10 @@ router.post('/register', async (req, res) => {
   }
 })
 
+//GET route to get the logged-in user id
+router.get('/id', (req, res) => {
+  const userId = req.session.user_id;
+  res.json( { userId });
+});
+
 module.exports = router;
