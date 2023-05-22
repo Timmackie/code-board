@@ -1,58 +1,49 @@
-# code-board
+# Code Board
 
-## user Experience / login
-fill in email and pass
-checks if info is in db already
-if yes then nev to hompage
-if no then details error message / have link option to creat account
+  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-## user experience / create account
-input:
-    - First and last name or a username
-    - email
-    - password
-        - //add password reqs
-    - git hub link
-    - linkedin link
-verify if email is unique to db
-verify name or username is unique to db
-upon verifyed info nav to homepage
+  ## Description
+  This app is a job and career resource posting website where users can create an account. Once the user has created an account, they will be able to view and create posts on the homepage.
 
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [License](#license)
+  * [How to Contribute](#how-to-contribute)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  
+  ## Installation
+  N/A
 
-## user experience / homepage
-When a user navs to the landing page they should redirect to the landing page //already has this function in code.
-If the user successfuly signs in, then they should be directed to hompage
-User signs in and should see create post button.
-Page should show 5 most recent posts.//have a button to see 5 next most recent posts. 
-How do we want pagination / front end-pull all data down and hide all but 5.
-click create post button / create modal w/ bootstrap
-fill in the info in the modal then click create post button
-post - create min input validations:    
-    -min text input (50?)
-    -on create click add confirmation modal asking are you sure? / Then it posts to homepage
-    
-TODO: create a "create profile" handlebars page
-TODO: update seeds w/ Linked in info and git hub info 
-TODO: create modals for creation of accounts and creation of posts // ask andrea about modals vs seperate page for create account. 
-    - look at documentaion and make sure we use vanilla bootstrap. 
-    - they go in the handlebars
-    - create a handlebars partials folder inside views folder
-    - create modal files
-        - signupModal.handlebars
-        - newpostModal.handlebars
-TODO: start debugging js file to verify const/var are ok. 
+  ## Usage
+  The user will be directed to the login page, where they will be able to sign in or create an account. To create an account, click on the Create Account button and fill out all of the input boxes. The user can then sign in using the created email address and password. Once signed in, the user can create a post or logout, by clicking on the respective button.
 
-## 
-nobody works on the same thing at the same time!!!!
-always pull latest
-don't always add all files// git add (relative file path)
-ask andrea about git reset and fetch vs pull.
-ask about temporarily disabling the login page to make working on the hompage easier. 
+  URL to deployed heroku app: https://codeboard.herokuapp.com/  
+  URL to GitHub repo: https://github.com/Timmackie/code-board  
 
 
 
+  ## Credits
 
-## nice to haves down the road
-use local storage to integrate a like or emoji funtion. 
-expand post body modal / add modal file to folder
--decide about post type i.e. check box or dropdown
+  Sticky note code sourced from: https://dev.to/thormeier/fully-responsive-html-css-sticky-note-4okl.   
+  Header styling sourced from: https://codepen.io/goodkatz/pen/LYPGxQz.   
+  Styling sourced from Bootstrap: https://mdbootstrap.com/.   
+
+  ## License
+    This app is licensed under the MIT license.
+
+  ## How to Contribute
+  N/A
+
+  ## Tests
+  N/A
+
+  ## Questions
+  Questions about this app?  
+  GitHub: https://github.com/timmackie  
+  GitHub: https://github.com/shale00  
+  GitHub: https://github.com/cjsolis12  
+  GitHub: https://github.com/michaelformico  
+  GitHub: https://github.com/Donnie46
