@@ -1,8 +1,10 @@
+// Function to handle the submission of the signup form
 const signupFormHandler = async (event) => {
     event.preventDefault();
 
     const body = document.querySelector('#content').value.trim();
 
+    // Ensures content field is not empty then sends POST request to make a new post
     if( body ) {
         const response = await fetch ('api/post/create', {
             method: 'POST',
@@ -19,6 +21,7 @@ const signupFormHandler = async (event) => {
     }
 }
 
+// Attach an event listener to the create post submit button
 const create = document
   .querySelector('#createPostSubmit') 
 create

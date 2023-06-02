@@ -1,5 +1,8 @@
+// Grabs the show more button element
 var showMoreButton = document.getElementById("showmoreButton");
 
+
+// Get the current number of posts from the URL path
 var currentPosts = parseInt(window.location.pathname.slice(1));
 var increment = 5;
 
@@ -9,6 +12,7 @@ showmoreButton.addEventListener("click", function () {
   window.location.href = `/${currentPosts}`;
 });
 
+// Gets user ID from server and sends GET request to retrieve user ID
 const getUserId = async () => {
   try {
     const response = await fetch("/api/user/id", {
@@ -16,6 +20,7 @@ const getUserId = async () => {
       headers: { "Content-Type": "application/json" },
     });
 
+    // Takes user ID from the response
     if (response.ok) {
       const data = await response.json();
       const userId = data.userId.toString();
