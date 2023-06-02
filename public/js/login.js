@@ -1,14 +1,11 @@
 // Login form handler function
 const loginFormHandler = async (event) => {
   event.preventDefault();
-  console.log("hit form handler");
 
   // Gets email and password values from the form
   const email = document.querySelector('#email-input').value.trim();
   const password = document.querySelector('#password-input').value.trim();
   
-  console.log(email, password);
-
   // Sends POST request if email and password fields are accepted 
   if (email && password) {
     const response = await fetch('/api/user/login', {
