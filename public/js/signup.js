@@ -13,7 +13,6 @@ const signupFormHandler = async (event) => {
            body: JSON.stringify({ name, password, email, linkedin, github }),
            headers: { 'Content-Type': 'application/json' },
         });
-        console.log(name, password, email, github, linkedin);
 
         if(response.ok){
             alert(`Created a new account!`)
