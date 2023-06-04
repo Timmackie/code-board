@@ -5,6 +5,14 @@
   ## Description
   This app is a job and career resource posting website where users can create an account. Once the user has created an account, they will be able to view, create, and delete their respective posts on the homepage.
 
+![Image Description](public/images/homepage.png)
+![Image Description](public/images/Login.png)
+![Image Description](public/images/homefeed.png)
+![Image Description](public/images/newpost.png)
+![Image Description](public/images/post.png)
+
+
+
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
